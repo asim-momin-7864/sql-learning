@@ -1,0 +1,32 @@
+# Node dependencies
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables (Keep secrets out of git!)
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Optional: Drizzle folder if you generate migrations that shouldn't be tracked (though normally you track migrations, so you don't ignore the `drizzle` output folder itself unless you want to). 
+# .drizzle/
