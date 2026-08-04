@@ -1,0 +1,81 @@
+/* Minimal, raw styling for an internal testing tool feel */
+body {
+    font-family: monospace;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px dashed #999;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #000;
+}
+
+.panel {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: monospace;
+    border: 1px solid #999;
+}
+
+button {
+    font-family: monospace;
+    background-color: #e0e0e0;
+    border: 1px solid #666;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button.danger {
+    background-color: #ffcccc;
+    border-color: #cc0000;
+    color: #cc0000;
+}
+
+button.danger:hover {
+    background-color: #ffaaaa;
+}
+
+.response-box {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #00ff00;
+    border: 1px solid #000;
+    min-height: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 12px;
+}
