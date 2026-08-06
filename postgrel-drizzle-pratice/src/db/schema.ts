@@ -19,7 +19,7 @@ export const notesTable = pgTable("notes", {
   content: text().notNull(),
   status: statusEnum("status").notNull().default("draft"),
   tags: varchar({ length: 100 }).array().notNull().default([]),
-  is_archived: boolean().notNull().default(false),
+  is_archived: boolean().notNull(),
   author_id: integer().notNull().default(1),
   created_at: timestamp().notNull().defaultNow(),
   updated_at: timestamp().notNull().defaultNow(),
