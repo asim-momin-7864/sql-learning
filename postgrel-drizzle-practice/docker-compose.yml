@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    restart: unless-stopped
+    ports:
+      - "5423:5432"
+    environment:
+      POSTGRES_USER: asimmomin7864
+      POSTGRES_PASSWORD: 7798111340
+      POSTGRES_DB: notesapp
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "0.5"
+
+  notes-api:
+    image: mini-app:1.0
+    container_name: express-backend
+    restart: unless-stopped
+    ports:
+      - "5001:5000"
+    environment:
+      PORT: 5000
+    env_file:
+      - .env
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: "0.5"
+
+volumes:
+  postgres_data:
+    driver: local
