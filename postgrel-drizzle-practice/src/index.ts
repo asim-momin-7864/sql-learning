@@ -1,10 +1,6 @@
 import express from 'express';
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import path from 'path';
 import notesRouter from './routes/notes';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 3000;
