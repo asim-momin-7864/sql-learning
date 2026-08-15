@@ -6,8 +6,8 @@ services:
     ports:
       - "5423:5432"
     environment:
-      POSTGRES_USER: asimmomin7864
-      POSTGRES_PASSWORD: 7798111340
+      POSTGRES_USER: dev_user
+      POSTGRES_PASSWORD: dev12345
       POSTGRES_DB: notesapp
     volumes:
       - postgres_data:/var/lib/postgresql
